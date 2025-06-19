@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Claim your $500 LuluLemon Gift Card with TrendnDaily! Fast, free & easy entry." />
+  <title>Get $500 LuluLemon Gift Card - TrendnDaily</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; text-align: center; color: #333; }
+    .container { max-width: 600px; margin: 50px auto; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    h1 { color: #9b59b6; font-size: 30px; }
+    p { font-size: 18px; line-height: 1.6; }
+    .btn { background: #8e44ad; color: white; padding: 15px 30px; font-size: 20px; text-decoration: none; border-radius: 8px; display: inline-block; margin-top: 25px; }
+    .note { font-size: 14px; color: #888; margin-top: 25px; }
+    .timer { font-size: 22px; color: #c0392b; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Win a $500 LuluLemon Gift Card!</h1>
+    <p>TrendnDaily is giving away a <strong>$500 LuluLemon Gift Card</strong> to selected users who answer a few short questions. It's 100% free — and super easy!</p>
+    <div class="timer" id="countdown">Offer expires in: --:--:--</div>
+    <a class="btn" href="https://smrturl.co/a/s2c1d7a8b65/1610?s1=fb" target="_blank">🎯 Claim Your Gift Card</a>
+    <p>✅ No purchase required | ⏱️ Only takes 2 minutes</p>
+    <div class="note">
+      This is a promotional page and is not affiliated with LuluLemon or TrendnDaily officially.
+    </div>
+  </div>
+
+  <script>
+    let countdown = document.getElementById('countdown');
+    let end = new Date();
+    end.setHours(end.getHours() + 1);
+    setInterval(() => {
+      let now = new Date().getTime();
+      let t = end - now;
+      if (t >= 0) {
+        let h = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        let s = Math.floor((t % (1000 * 60)) / 1000);
+        countdown.innerHTML = `Offer expires in: ${h}:${m}:${s}`;
+      } else {
+        countdown.innerHTML = "Offer expired!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
